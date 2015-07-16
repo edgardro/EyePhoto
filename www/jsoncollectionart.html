@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" ng-app id="ng-app">
+<head>
+<meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,300,400italic,400,700italic,700" rel="stylesheet" type="text/css">
+  <link data-require="bootstrap-css@3.2.0" data-semver="3.2.0" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+<title>Page Title</title>
+<link rel="stylesheet" href="style-pic.css" />
+<script src="js/angular.js"></script>
+<script>
+function PostsCtrlAjax($scope, $http)
+{
+$http({method: 'POST', url: 'js/collections.json'}).success(function(data)
+{
+$scope.posts = data; // response data 
+});
+}
+</script>
+</head>
+ <div class="navnavbar-nav">
+ <h1>My art collection</h1>
+ <a class="button back" onClick="javascript:history.go(-1);"></a>
+<body>
+
+<div id="ng-app" ng-app ng-controller="PostsCtrlAjax">
+<div class="jumbotron">
+
+<div ng-repeat="post in posts" >
+<div class="contbanner2" >
+<!-- <h1>
+<a href='{{post.url}}'>{{post.title}}</a>
+</h1> -->
+
+<!-- <div class='time'>{{post.time}} - {{post.author}} </div>
+<p>{{post.description}}</p> -->
+<a href='{{post.url}}'>
+
+<img ng-src="{{post.banner}}" />
+</a>
+</div>
+   </div>
+</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,300,400italic,400,700italic,700" rel="stylesheet" type="text/css">
+  <link data-require="bootstrap-css@3.2.0" data-semver="3.2.0" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+  <!-- <link rel="stylesheet" href="mobile-angular-ui/dist/css/mobile-angular-ui-base.min.css" /> -->
+  <script data-require="angular.js@1.2.22" data-semver="1.2.22" src="https://code.angularjs.org/1.2.22/angular.js"></script>
+  <script src="https://code.angularjs.org/1.2.20/angular-route.js"></script>
+<!--   // <script src="mobile-angular-ui/dist/js/mobile-angular-ui.min.js"></script>
+ -->  <title>Multiple ng-view in a single template</title>
+  <script src="script.js"></script>
+  
+  
+</head>
+
+<body ng-app="myApp">
+  <!--Now it Tells to AngularJS to be active in this portion of the page. In this case the entire document.(due to we apply on body tag ) -->
+<!--   <div class="container">
+ -->   
+ <div class="navnavbar-nav">
+      <span><h2>Eye Photo</h2></span> 
+     <!-- <img src="../imagesUI/logo.png"> -->
+    </div>
+  <div class="jumbotron" ng-controller="RouteCtrl">
+      <!-- <img src="http://tech-blog.maddyzone.com/wp-content/uploads/2013/10/maddyzone-logo-300x72.png"> -->
+      <!-- <br/> -->
+     
+
+    <div class="containerbanner">
+    <div class="contbanner1">
+      <!-- <div class="banner"> -->
+        <img src="../www/imagesUI/AliBack.png"   >
+    <!--   </div> -->
+    </div>
+  </div>
+
+      <!-- by ng-view we create a space in this dynamic content come according to route by ng-view angular know that on which area content will set-->
+
+      <!-- but here we want to insert three teplate home.html,aboutus.html, contactus.html -->
+
+<!--       <i class="badge">load uirouter.html file in this all html file loaded </i><br/><br/>
+ -->      <div ng-view="">
+      </div>
+      <!-- <a href="http://tech-blog.maddyzone.com/javascript/how-use-multiple-ng-view-in-a-single-page" target="_blank">View Post on Maddyzone </a> -->
+
+    </div>
+<!--   </div> -->
+</body>
+
+</html>
+<!-- content set for contact page -->
+<!-- <div style="font-size: 32px"  >
+    <h1>Contact</h1>
+    <h2 class="label label-info">{{contact.message}}</h2>
+</div> -->

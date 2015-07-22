@@ -28,8 +28,8 @@ myApp.config(function ($routeProvider, $locationProvider) {
    $scope.template={
      
      
-     "about":"aboutus.html",
-     "myart":"myart.html", 
+     "artwork":"artwork.html",
+     "photography":"photography.html",
      "boysart":"boysart.html",
      "girlsart":"girlsart.html",
      "collectionart":"collectionart.html",
@@ -40,6 +40,8 @@ myApp.config(function ($routeProvider, $locationProvider) {
      "video":"video.html"
      
    }
+
+
    
    /** now after this ng-include in uirouter.html set and take template from their respective path **/
     

@@ -13,7 +13,7 @@
 <script>
 function PostsCtrlAjax($scope, $http)
 {
-$http({method: 'POST', url: 'js/videos.json'}).success(function(data)
+$http({method: 'POST', url: 'js/artwork.json'}).success(function(data)
 {
 $scope.posts = data; // response data 
 });

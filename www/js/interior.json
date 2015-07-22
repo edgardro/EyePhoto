@@ -23,5 +23,10 @@
 "title":"Pictures CR7", 
 "url":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/5.jpg",
 "banner":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/5.jpg"
+
+"alignment :center"
+
+ "width: 500"
+ "height : 500"
 }
 ]

@@ -1,27 +1,52 @@
  [
 { 
 "title":"Pictures CR7", 
-"url":"54.68.223.206:/var/www/html/Alimages//1.jpg",
-"banner":"http://ec2-54-221-30-114.compute-1.amazonaws.com/videos/Aeropuerto_bus.jpg"
+"url":"http://54.148.69.207/images/Photography/1.jpg",
+"banner":"http://54.148.69.207/images/Photography/1.jpg"
+},
+{ 
+"title":"Pictures CR7", 
+"url":"http://54.148.69.207/images/Photography/2.jpg",
+"banner":"http://54.148.69.207/images/Photography/2.jpg"
 }, 
 { 
 "title":"Pictures CR7", 
-"url":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/2.jpg",
-"banner":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/2.jpg"
+"url":"http://54.148.69.207/images/Photography/3.jpg",
+"banner":"http://54.148.69.207/images/Photography/3.jpg"
 }, 
 { 
 "title":"Pictures CR7", 
-"url":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/3.jpg",
-"banner":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/3.jpg"
-}, 
+"url":"http://54.148.69.207/images/Photography/4.jpg",
+"banner":"http://54.148.69.207/images/Photography/4.jpg" 
+},
 { 
 "title":"Pictures CR7", 
-"url":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/4.jpg",
-"banner":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/4.jpg" 
-}, 
+"url":"http://54.148.69.207/images/Photography/5.jpg",
+"banner":"http://54.148.69.207/images/Photography/5.jpg" 
+},
 { 
 "title":"Pictures CR7", 
-"url":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/5.jpg",
-"banner":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/5.jpg"
+"url":"http://54.148.69.207/images/Photography/6.jpg",
+"banner":"http://54.148.69.207/images/Photography/6.jpg" 
+},
+{ 
+"title":"Pictures CR7", 
+"url":"http://54.148.69.207/images/Photography/7.jpg",
+"banner":"http://54.148.69.207/images/Photography/7.jpg" 
+},
+{ 
+"title":"Pictures CR7", 
+"url":"http://54.148.69.207/images/Photography/8.jpg",
+"banner":"http://54.148.69.207/images/Photography/8.jpg" 
+},
+{ 
+"title":"Pictures CR7", 
+"url":"http://54.148.69.207/images/Photography/9.jpg",
+"banner":"http://54.148.69.207/images/Photography/9.jpg" 
+},
+{ 
+"title":"Pictures CR7", 
+"url":"http://54.148.69.207/images/Photography/10.jpg",
+"banner":"http://54.148.69.207/images/Photography/10.jpg"
 }
 ]

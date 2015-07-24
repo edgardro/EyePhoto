@@ -1,27 +1,52 @@
  [
 { 
 "title":"Pictures CR7", 
-"url":"http://ec2-54-221-30-114.compute-1.amazonaws.com/videos/nuevos/Aeropuerto_bus.3gp",
-"banner":"http://ec2-54-221-30-114.compute-1.amazonaws.com/videos/Aeropuerto_bus.jpg"
+"url":"http://54.148.69.207/images/Eyexhibitions/1.jpg",
+"banner":"http://54.148.69.207/images/Eyexhibitions/1.jpg"
+},
+{ 
+"title":"Pictures CR7", 
+"url":"http://54.148.69.207/images/Eyexhibitions/2.jpg",
+"banner":"http://54.148.69.207/images/Eyexhibitions/2.jpg"
 }, 
 { 
 "title":"Pictures CR7", 
-"url":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/2.jpg",
-"banner":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/2.jpg"
+"url":"http://54.148.69.207/images/Eyexhibitions/3.jpg",
+"banner":"http://54.148.69.207/images/Eyexhibitions/3.jpg"
 }, 
 { 
 "title":"Pictures CR7", 
-"url":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/3.jpg",
-"banner":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/3.jpg"
-}, 
+"url":"http://54.148.69.207/images/Eyexhibitions/4.jpg",
+"banner":"http://54.148.69.207/images/Eyexhibitions/4.jpg" 
+},
 { 
 "title":"Pictures CR7", 
-"url":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/4.jpg",
-"banner":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/4.jpg" 
-}, 
+"url":"http://54.148.69.207/images/Eyexhibitions/5.jpg",
+"banner":"http://54.148.69.207/images/Eyexhibitions/5.jpg" 
+},
 { 
 "title":"Pictures CR7", 
-"url":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/5.jpg",
-"banner":"http://ec2-54-221-30-114.compute-1.amazonaws.com/images/5.jpg"
+"url":"http://54.148.69.207/images/Eyexhibitions/6.jpg",
+"banner":"http://54.148.69.207/images/Eyexhibitions/6.jpg" 
+},
+{ 
+"title":"Pictures CR7", 
+"url":"http://54.148.69.207/images/Eyexhibitions/7.jpg",
+"banner":"http://54.148.69.207/images/Eyexhibitions/7.jpg" 
+},
+{ 
+"title":"Pictures CR7", 
+"url":"http://54.148.69.207/images/Eyexhibitions/8.jpg",
+"banner":"http://54.148.69.207/images/Eyexhibitions/8.jpg" 
+},
+{ 
+"title":"Pictures CR7", 
+"url":"http://54.148.69.207/images/Eyexhibitions/9.jpg",
+"banner":"http://54.148.69.207/images/Eyexhibitions/9.jpg" 
+},
+{ 
+"title":"Pictures CR7", 
+"url":"http://54.148.69.207/images/Eyexhibitions/10.jpg",
+"banner":"http://54.148.69.207/images/Eyexhibitions/10.jpg"
 }
 ]

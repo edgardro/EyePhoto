@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" ng-app="galleryApp" id="ng-app">
+<!-- <html ng-app="galleryApp"> -->
+<head>
+<meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,300,400italic,400,700italic,700" rel="stylesheet" type="text/css">
+  <link data-require="bootstrap-css@3.2.0" data-semver="3.2.0" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+<title>Page Title</title>
+<link rel="stylesheet" href="style-pic.css" />
+<script src="js/angular.js"></script>
+<script src="app.js"></script>
+<script>
+// function PostsCtrlAjax($scope, $http)
+// {
+// $http({method: 'POST', url: 'js/art.json'}).success(function(data)
+// {
+// $scope.posts = data; // response data 
+// });
+// }
+// </script>
+</head>
+ <div class="navnavbar-nav">
+ <h1>Eye on art</h1>
+<a class="button back" onClick="javascript:history.go(-1);"></a>
+<body>
+
+
+<div ng-controller="GalleryController">
+
+<div class="jumbotron">
+<div class="contbanner2" >
+
+<div ng-repeat="image in galleryData" >
+
+
+<img ng-src="{{IMAGE_LOCATION+image.image}}"/>
+</a>
+</div>
+   </div>
+</div>
+</div>
+
+
+</body>
+</html>

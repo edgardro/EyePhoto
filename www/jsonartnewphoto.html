@@ -12,7 +12,6 @@
 <link rel="stylesheet" href="style-pic.css" />
 <script src="js/angular.js"></script>
 <script src="app.js"></script>
-<script src="script.js"></script>
 <script>
 // function PostsCtrlAjax($scope, $http)
 // {
@@ -24,28 +23,28 @@
 // </script>
 </head>
  <div class="navnavbar-nav">
- <h1>Eye on art</h1>
+ <h1>Eye on art All Photos</h1>
 <a class="button back" onClick="javascript:history.go(-1);"></a>
 <body>
 
 
 <div ng-controller="GalleryController">
 
-<div class="jumbotron">
+<div class="viewwindow">
 <div class="contbanner2" >
+
+ <ul id="fullscroller" class="fullsizelist" ng-style="listposition">
 
 <div ng-repeat="image in galleryData" >
 
-<!-- <a ng-href="" ng-click="scrollTo(image,$jsonartnewphoto)"> -->
+<img id="fullsize" class="large" ng-src="{{IMAGE_LOCATION+image.image}}"/>
 
- <!-- <a ng-href="" ng-click="go('/jsonartnewphoto')"> -->
- <!-- <a ng-href="" ng-click="redirect()"> -->
+ <!-- <a ng-href="" ng-click="go('/page2')"> -->
 
- <a ng-href="jsonartnewphoto.html">
-
-<img ng-src="{{IMAGE_LOCATION+image.image}}"/>
-</a>
+<!-- <img ng-src="{{IMAGE_LOCATION+image.image}}"/> -->
+<!-- </a> -->
 </div>
+</ul>
    </div>
 </div>
 </div>

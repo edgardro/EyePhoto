@@ -28,4 +28,7 @@ var GalleryController = function($scope,DataSource) {
     $scope.go = function ( path ) {
   $location.path( path );
 };
+$scope.redirect = function(){
+  window.location = "#/jsonartnewphoto.html";
+}
 };

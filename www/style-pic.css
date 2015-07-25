@@ -208,10 +208,36 @@ h1 {
 background-color: rgba(0, 0, 0, 0.4);
 /*border-top: 1px solid #000000 ;*/
 
-
-
 }
 
+.viewwindow {
+    width:auto;
+    height:auto;
+    /*overflow-x: hidden;*/
+    position:relative;
+}
+
+.large {
+    width:auto;
+    height: auto;
+}
+
+.fullsizelist{
+    position:absolute;
+    top:0;
+    left:0;
+    transition:  left .8s ease;
+    -ms-transition:  left .8s ease;
+    -o-transition:  left .8s ease;
+    -webkit-transition:  left .8s ease;
+    -moz-transition:  left .8s ease;
+}
+
+.ul{
+    padding:0;
+    margin:0;
+    white-space:nowrap;
+}
 
 .navnavbar-nav {
   /*background-color: gray;*/

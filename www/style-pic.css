@@ -99,6 +99,8 @@ padding: 0px;*/
 
 }
 
+
+
 h2 {
   /*background-color: gray;*/
   /*opacity: 2.0;*/
@@ -206,6 +208,49 @@ h1 {
 
     /*border: 1px solid #ffffff;*/
 background-color: rgba(0, 0, 0, 0.4);
+/*border-top: 1px solid #000000 ;*/
+
+}
+
+
+
+.contbanner3 {
+  /*position: absolute;
+  height: auto;
+  width: 100%;
+  margin-top: 0px;
+  display: block;*/
+margin: 1px;
+/*margin-right: 1px;
+margin-left: 1px;*/
+width: auto;
+height: auto;
+position: relative;
+/*padding: 0px;*/
+background-color: transparent;
+
+
+
+  /*background-color: rgba(0, 0, 0, 0.4);*/
+
+   /*margin-left: auto;
+  margin-right: auto;*/
+  /*height: 820px;*/
+}
+
+
+.contbanner3 img {
+  /*margin-top: 1px;*/
+  /*padding: 1px 1px 1px 1px;*/
+  position: relative;
+  height: 100%;
+  width: 100%;
+   display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    /*border: 1px solid #ffffff;*/
+/*background-color: rgba(0, 0, 0, 0.4);*/
 /*border-top: 1px solid #000000 ;*/
 
 }
@@ -415,6 +460,8 @@ position: relative;
 }
 
 
+
+
 .alert {
   border-radius: 0px;
   padding: 0px;
@@ -481,14 +528,14 @@ position: relative;
 }
 
 .slider {
-    border: 15px solid #FFFFFF;
-    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    border-radius: 1px;
     height: 500px;
-    margin: 20px auto;
+    margin: auto;
     position: relative;
-    width: 800px;
+    width: 500px;
 
-    -webkit-perspective: 1000px;
+    /*-webkit-perspective: 1000px;
     -moz-perspective: 1000px;
     -ms-perspective: 1000px;
     -o-perspective: 1000px;
@@ -498,12 +545,11 @@ position: relative;
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+    transform-style: preserve-3d;*/
 }
 .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    padding: 2px;
 }
 .slide.ng-hide-add {
     opacity:1;

@@ -1,4 +1,4 @@
-angular.module('galleryApp',[]).
+angular.module('galleryApp',['ngAnimate', 'ngTouch']).
     factory('DataSource', ['$http',function($http){
        return {
            get: function(fileName,callback){
@@ -18,6 +18,29 @@ var GalleryController = function($scope,DataSource) {
     DataSource.get("js/girlsnew.json",function(data) {
         $scope.galleryData = data;
         $scope.selected = data[0];
+
+          // initial image index
+    $scope._Index = 0;
+
+    // if a current image is the same as requested image
+    $scope.isActive = function (index) {
+        return $scope._Index === index;
+    };
+
+    // show prev image
+    $scope.showPrev = function () {
+        $scope._Index = ($scope._Index > 0) ? --$scope._Index : $scope.image.length - 1;
+    };
+
+    // show next image
+    $scope.showNext = function () {
+        $scope._Index = ($scope._Index < $scope.image.length - 1) ? ++$scope._Index : 0;
+    };
+
+    // show a certain image
+    $scope.showPhoto = function (index) {
+        $scope._Index = index;
+    };
     });
     
     // Scroll to appropriate position based on image index and width

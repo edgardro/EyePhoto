@@ -11,7 +11,7 @@
 <title>Page Title</title>
 <link rel="stylesheet" href="style-pic.css" />
 <script src="js/angular.js"></script>
-<script src="app.js"></script>
+<script src="apppic.js"></script>
 <!-- <script src="js/jquery-2.0.3.min.js"></script> -->
 <script src="http://code.angularjs.org/1.2.0rc1/angular.js"></script>
 <script src="http://code.angularjs.org/1.2.0rc1/angular-animate.min.js"></script>
@@ -36,7 +36,7 @@
 <div ng-controller="GalleryController">
 
 <!-- <div class="viewwindow"> -->
-<!-- <div class="contbanner2"> -->
+<div class="contbanner3">
 
 <div class="container slider">
 
@@ -55,18 +55,18 @@
         <a class="arrow next" href="#" ng-click="showNext()"></a>
 
         <!-- extra navigation controls -->
-        <ul class="nav">
+        <!-- <ul class="nav">
             <li ng-repeat="image in galleryData" ng-class="{'active':isActive($index)}">
                 <img src="{{IMAGE_LOCATION+image.image}}" alt="{{image.desc}}" title="{{image.desc}}" ng-click="showPhoto($index);" />
             </li>
-        </ul>
+        </ul> -->
 
 
  <!-- <a ng-href="" ng-click="go('/page2')"> -->
 
 <!-- <img ng-src="{{IMAGE_LOCATION+image.image}}"/> -->
 <!-- </a> -->
-<!-- </div> -->
+</div>
 <!-- </ul> -->
    </div>
 </div>

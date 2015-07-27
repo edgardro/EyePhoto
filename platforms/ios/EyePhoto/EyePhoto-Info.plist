@@ -171,5 +171,9 @@
         <string>{768, 1024}</string>
       </dict>
     </array>
+    <key>UIRequiresFullScreen</key>
+    <true/>
+    <key>UIStatusBarHidden</key>
+    <true/>
   </dict>
 </plist>

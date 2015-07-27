@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E2AAEB35-3550-4325-B19F-D3E6313DA729</string>
 	<key>IDESourceControlProjectName</key>
-	<string>EyePhoto</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B9F50314E2236734242539BFE0E4A93E1FCB2F1D</key>
 		<string>https://github.com/edgardro/EyePhoto.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>platforms/ios/EyePhoto.xcodeproj</string>
+	<string>platforms/ios/EyePhoto.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B9F50314E2236734242539BFE0E4A93E1FCB2F1D</key>

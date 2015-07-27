@@ -37,7 +37,9 @@ myApp.config(function ($routeProvider, $locationProvider) {
      "interior":"interior.html",
      "exhibitions":"exhibitions.html",
      "travel":"travel.html",
+     "jsonartnewphoto":"jsonartnewphoto.html",
      "video":"video.html"
+
      
    }
 

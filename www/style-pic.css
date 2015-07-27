@@ -480,32 +480,32 @@ position: relative;
 .arrow {
     cursor: pointer;
     display: block;
-    height: 30px;
+    height: 50px;
     margin-top: -35px;
     outline: medium none;
     position: absolute;
     top: 50%;
-    width: 30px;
+    width: 50px;
     z-index: 5;
 }
 .arrow.prev {
-    background-image: url("../www/imagesUI/backfinal.png");
+   background-image: url("../www/imagesUI/arrowleft.png");
     left: 20px;
-    opacity: 0.2;
-    transition: all 0.2s linear 0s;
+    opacity: 1;
+    /*transition: all 0.2s linear 0s;*/
 }
 .arrow.next {
-    background-image: url("../www/imagesUI/backfinal.png");
-    opacity: 0.2;
+    background-image: url("../www/imagesUI/arrowright.png");
+    opacity: 1;
     right: 20px;
-    transition: all 0.2s linear 0s;
+    /*transition: all 0.2s linear 0s;*/
 }
-.arrow.prev:hover{
+/*.arrow.prev:hover{
     opacity:1;
 }
 .arrow.next:hover{
     opacity:1;
-}
+}*/
 
 .nav {
     /*bottom: -4px;*/

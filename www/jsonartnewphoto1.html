@@ -1,7 +1,32 @@
+<script src="app.js"></script>
+<div ng-controller="GalleryController">
 <div class="modal-header">
     <h3 class="modal-title">I'm a modal!</h3>
-    <button class="btn btn-warning" ng-click="close()">X</button>
-  </div>
+   <!--  <button class="btn btn-warning" ng-click="close()">X</button> -->
+  
   <div class="modal-body">
     Stuff
-  </div>
+  
+
+
+
+   <img ng-repeat="image in galleryData" class="slide" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{IMAGE_LOCATION+image.image}}">
+
+
+<a class="arrow prev" href="#" ng-click="nextSlide()"></a>
+    <a class="arrow next" href="#" ng-click="prevSlide()"></a>
+
+ <nav class="nav">
+        <div class="wrapper">
+            <ul class="dots">
+                <li class="dot" ng-repeat="image in galleryData">
+                    <a href="#" ng-class="{'active':isCurrentSlideIndex($index)}"
+                      ng-click="setCurrentSlideIndex($index);">{{slide.description}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</div>
+    </div>

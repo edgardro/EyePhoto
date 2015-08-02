@@ -18,6 +18,26 @@ var GalleryController = function($scope, $modal, DataSource) {
     DataSource.get("js/girlsnew.json",function(data) {
         $scope.galleryData = data;
         $scope.selected = data[0];
+
+
+           // initial image index
+     $scope.currentIndex = 0;
+
+        $scope.setCurrentSlideIndex = function (index) {
+            $scope.currentIndex = index;
+        };
+
+        $scope.isCurrentSlideIndex = function (index) {
+            return $scope.currentIndex === index;
+        };
+
+        $scope.prevSlide = function () {
+            $scope.currentIndex = ($scope.currentIndex < $scope.galleryData.length - 1) ? ++$scope.currentIndex : 0;
+        };
+
+        $scope.nextSlide = function () {
+            $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.galleryData.length - 1;
+        };
     });
     
 

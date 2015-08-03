@@ -66,7 +66,38 @@ padding: 0px;*/
 
 }
 
-.extendfull, .extendleft
+
+.modal-header {
+  width: auto;
+  height: auto;
+  background-color: #000000;
+  opacity: 1;
+  margin top: 200px;
+  /*margin-bottom: auto;*/
+
+
+}
+
+
+.modal-body {
+  width: auto;
+  height: auto;
+  background-color: #000000;
+ padding: 0px;
+
+ /*overflow-y: auto;*/
+  margin: 0 auto 0 auto;
+
+  overflow-y: hidden;
+
+
+    /*padding: 0 auto;*/
+    /*margin: auto;*/
+    position: relative;
+
+}
+
+/*.extendfull, .extendleft
 {
   padding-left: 3000px;
   margin-left: -3000px;
@@ -77,7 +108,7 @@ padding: 0px;*/
   padding-right: 3000px;
   margin-right: -3000px;
 }
-
+*/
 
 /*
 .header {

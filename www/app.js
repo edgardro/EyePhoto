@@ -49,7 +49,7 @@ $scope.setCurrentImage = function (image) {
 
  $scope.showImages = function (index) {
     var modalInstance = $modal.open({
-      templateUrl: 'jsonartnewphoto1.html',
+      templateUrl: 'modalview.html',
       controller: ModalInstanceCtrl,
       scope: $scope,
       // resolve: {

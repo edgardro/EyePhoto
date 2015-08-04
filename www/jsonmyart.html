@@ -1,50 +1,67 @@
 <!doctype html>
-<html lang="en" ng-app id="ng-app">
+<html lang="en" ng-app="galleryApp" id="ng-app">
+<!-- <html ng-app="galleryApp"> -->
 <head>
 <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,300,400italic,400,700italic,700" rel="stylesheet" type="text/css">
-  <link data-require="bootstrap-css@3.2.0" data-semver="3.2.0" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+         <link data-require="bootstrap-css@3.x" data-semver="2.3.2" rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />
+    <link rel="stylesheet" href="style-pic.css" />
+
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js" data-semver="1.2.19" data-require="angular.js@*"></script>
+    <script data-require="angular-ui-bootstrap@0.11.0" data-semver="0.11.0" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.min.js"></script>
+
+
+
+
+
 <title>Page Title</title>
-<link rel="stylesheet" href="style-pic.css" />
-<script src="js/angular.js"></script>
-<script>
-function PostsCtrlAjax($scope, $http)
-{
-$http({method: 'POST', url: 'js/videos.json'}).success(function(data)
-{
-$scope.posts = data; // response data 
-});
-}
-</script>
+
+<!-- <script src="js/angular.js"></script> -->
+<!-- <script src="js/angular-ui-bootstrap-modal.js"></script> -->
+<script src="app.js"></script>
+<!-- <script src="app1.js"></script> -->
+<!-- <script src="script.js"></script> -->
+<!-- <script src="script.js"></script> -->
+<!-- <script src="apppic.js"></script> -->
+<!-- <script src="https://rawgit.com/dwmkerr/angular-modal-service/master/dst/angular-modal-service.js"></script> -->
+
 </head>
+<!-- <div class="extendfull"> -->
  <div class="navnavbar-nav">
- <h1>My art collection</h1>
- <a class="button back" onClick="javascript:history.go(-1);"></a>
+ <h1>Eye on My Art</h1>
+<a class="button back" onClick="javascript:history.go(-1);"></a>
 <body>
 
-<div id="ng-app" ng-app ng-controller="PostsCtrlAjax">
+
+<div ng-controller="GalleryController">
+
 <div class="jumbotron">
-
-<div ng-repeat="post in posts" >
 <div class="contbanner2" >
-<!-- <h1>
-<a href='{{post.url}}'>{{post.title}}</a>
-</h1> -->
 
-<!-- <div class='time'>{{post.time}} - {{post.author}} </div>
-<p>{{post.description}}</p> -->
-<a href='{{post.url}}'>
+<!-- <div ng-repeat="image in galleryData" > -->
 
-<img ng-src="{{post.banner}}" />
-</a>
+<!-- <a ng-href="" ng-click="scrollTo(image,$jsonartnewphoto)"> -->
+
+ <!-- <a ng-href="" ng-click="go('/jsonartnewphoto')"> -->
+ <!-- <a ng-href="" ng-click="redirect()"> -->
+
+ <!-- <a ng-href="jsonartnewphoto.html"> -->
+
+<img class="clickable" ng-repeat="image in galleryData" ng-src="{{IMAGE_LOCATION+image.image}}" ng-click="showImages($index)" />
+
+
+
+<!-- <img ng-src="{{IMAGE_LOCATION+image.image}}"/> -->
+
 </div>
    </div>
 </div>
 </div>
-
+<!-- </div> -->
 
 </body>
 </html>

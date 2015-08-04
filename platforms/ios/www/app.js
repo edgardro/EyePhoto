@@ -40,7 +40,9 @@ var GalleryController = function($scope, $modal, DataSource) {
         };
     });
     
-
+$scope.setCurrentImage = function (image) {
+        $scope.currentImage = image;
+    };
   //   $scope.showImages = function(index) {
   // $scope.activeSlide = index;
   // $scope.showModal('jsonartnewphoto1.html');

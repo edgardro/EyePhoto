@@ -10,6 +10,8 @@
          <link data-require="bootstrap-css@3.x" data-semver="2.3.2" rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />
     <link rel="stylesheet" href="style-pic.css" />
 
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> -->
  
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js" data-semver="1.2.19" data-require="angular.js@*"></script>
     <script data-require="angular-ui-bootstrap@0.11.0" data-semver="0.11.0" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.min.js"></script>
@@ -39,8 +41,8 @@
 
 <div ng-controller="GalleryController">
 
-<div class="jumbotron">
-<div class="contbanner2" >
+<!-- <div class="jumbotron">
+<div class="contbanner2" > -->
 
 <!-- <div ng-repeat="image in galleryData" > -->
 
@@ -50,14 +52,53 @@
  <!-- <a ng-href="" ng-click="redirect()"> -->
 
  <!-- <a ng-href="jsonartnewphoto.html"> -->
-<img ng-repeat="image in galleryData" ng-src="{{IMAGE_LOCATION+image.image}}" ng-click="showImages($index)" />
 
- 
+
+<!-- <img class="clickable" ng-repeat="image in galleryData" ng-src="{{IMAGE_LOCATION+image.image}}" ng-click="showImages($index)" /> -->
+
+ <div id="albumImage">
+        <img ng-src="{{IMAGE_LOCATION+image.image}}" >
+    </div>
+    <div id="thumbWrapper">
+        <ul id="thumbList">
+            <li ng-repeat="image in galleryData" ng-click="setCurrentImage(image)">
+                <img ng-src="{{IMAGE_LOCATION+image.image}}" >
+            </li>
+        </ul>
+    </div>
+
+
+
+
+ <!-- Modal view -->
+<!-- <div class="modal-body">
+    
+  <img ng-repeat="image in galleryData" class="slide" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{IMAGE_LOCATION+image.image}}" ng-click="showImages($index)"/>
+
+<a class="arrow prev" href="#" ng-click="nextSlide()"></a>
+
+    <a class="arrow next" href="#" ng-click="prevSlide()"></a>
+
+ <nav class="nav">
+        <div class="wrapper">
+            <ul class="dots">
+                <li class="dot" ng-repeat="image in galleryData">
+                    <a href="#" ng-class="{'active':isCurrentSlideIndex($index)}"
+                      ng-click="setCurrentSlideIndex($index);">{{slide.description}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</div> -->
+
+
 
 <!-- <img ng-src="{{IMAGE_LOCATION+image.image}}"/> -->
 
-</div>
-   </div>
+<!-- </div>
+   </div> -->
 </div>
 </div>
 <!-- </div> -->

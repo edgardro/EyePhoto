@@ -2,18 +2,14 @@
 <div ng-controller="GalleryController">
 <div class="modal-header">
     <!-- <h3 class="modal-title">I'm a modal!</h3> -->
-   <!--  <button class="btn btn-warning" ng-click="close()">X</button> -->
+    <button class="btn btn-warning" ng-click="cancel()">X</button>
   
   <div class="modal-body">
     
-  
-
-
-
    <img ng-repeat="image in galleryData" class="slide" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{IMAGE_LOCATION+image.image}}">
 
-
 <a class="arrow prev" href="#" ng-click="nextSlide()"></a>
+
     <a class="arrow next" href="#" ng-click="prevSlide()"></a>
 
  <nav class="nav">
